@@ -5,7 +5,7 @@ import { TagService } from "./tag.service";
 export class TagController {
     constructor(private readonly tagService: TagService){}
     @Get() // get decorator
-    findAll() {
+    findAll(): string[] {
         return this.tagService.findAll();
     }
 
